@@ -3,6 +3,13 @@
     <title></title>
 </head>
 <body>
-    <p>There once was a {{ color }} {{ noun }} sitting in hackbright lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way.</p>
+    <p>There once was a {{ color }} {{ noun }} sitting in hackbright lab. When {{ person }} went to pick it up, it burst into flames in a totally {{ adjective }} way.
+        {{ person }} is also: </p>
+    <ul>
+        {% for adjective in adjective2 %}
+          <li>{{ adjective }}</li>
+        {% endfor %}
+    </ul>
+
 </body>
 </html>
