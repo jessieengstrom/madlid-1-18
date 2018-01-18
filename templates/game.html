@@ -1,9 +1,7 @@
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %}Madlib Form{% endblock %}
 
+{% block content %}
     <form action="/madlib"> 
         Welcome to our madlib game! Please fill in the following:<br><br>
         Person:
@@ -20,6 +18,4 @@
         <input type="checkbox" name="adjective2" value="scary">scary<br>
         <input type="submit"><br>
     </form>
-
-</body>
-</html>
+{% endblock %}

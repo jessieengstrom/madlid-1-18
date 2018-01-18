@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Madlib2{% endblock %}
+
+{% block content %}
+
+    <p>{{ person }} really hates {{ noun }}. {{ person }} thinks that {{ noun }} is very {{ adjective }}. But in reality, {{ noun }} is actually: </p>
+
+        {% for adjective in adjective2 %}
+          <p>{{ adjective }} !</p>
+        {% endfor %}
+
+{% endblock %}
